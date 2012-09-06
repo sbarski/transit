@@ -1,0 +1,20 @@
+﻿Removed:
+- Entity Framework Reference
+
+Goals:
+- Security is the focus (2A, SSL, etc..)
+- Use as few components as possible (Use MEF for IoC and DI)
+- use asp.net 4.5 api
+- make it restful
+- use bundling
+- use coffeescript
+- custom membership and authentication
+- simplicity (ravendb, attributes, no repo or services)
+- async by default
+- baked in signalR
+- compelling examples
+- programmer happiness
+
+To Do:
+- Introduce MEF for basic IoC and DI
+- Remove existing image files, jquery, etc...

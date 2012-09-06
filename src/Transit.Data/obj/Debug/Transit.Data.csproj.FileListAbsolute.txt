@@ -1,0 +1,15 @@
+c:\Users\administrator\documents\visual studio 2012\Projects\Transit\Transit.Data\bin\Debug\Transit.Data.dll
+c:\Users\administrator\documents\visual studio 2012\Projects\Transit\Transit.Data\bin\Debug\Transit.Data.pdb
+c:\Users\administrator\documents\visual studio 2012\Projects\Transit\Transit.Data\bin\Debug\Newtonsoft.Json.dll
+c:\Users\administrator\documents\visual studio 2012\Projects\Transit\Transit.Data\bin\Debug\NLog.dll
+c:\Users\administrator\documents\visual studio 2012\Projects\Transit\Transit.Data\bin\Debug\Raven.Abstractions.dll
+c:\Users\administrator\documents\visual studio 2012\Projects\Transit\Transit.Data\bin\Debug\Raven.Client.Lightweight.dll
+c:\Users\administrator\documents\visual studio 2012\Projects\Transit\Transit.Data\bin\Debug\Newtonsoft.Json.xml
+c:\Users\administrator\documents\visual studio 2012\Projects\Transit\Transit.Data\bin\Debug\NLog.xml
+c:\Users\administrator\documents\visual studio 2012\Projects\Transit\Transit.Data\bin\Debug\Raven.Abstractions.pdb
+c:\Users\administrator\documents\visual studio 2012\Projects\Transit\Transit.Data\bin\Debug\Raven.Abstractions.xml
+c:\Users\administrator\documents\visual studio 2012\Projects\Transit\Transit.Data\bin\Debug\Raven.Client.Lightweight.pdb
+c:\Users\administrator\documents\visual studio 2012\Projects\Transit\Transit.Data\bin\Debug\Raven.Client.Lightweight.xml
+c:\Users\administrator\documents\visual studio 2012\Projects\Transit\Transit.Data\obj\Debug\Transit.Data.csprojResolveAssemblyReference.cache
+c:\Users\administrator\documents\visual studio 2012\Projects\Transit\Transit.Data\obj\Debug\Transit.Data.dll
+c:\Users\administrator\documents\visual studio 2012\Projects\Transit\Transit.Data\obj\Debug\Transit.Data.pdb
