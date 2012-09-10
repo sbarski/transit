@@ -64,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attributes\RavenAsyncSessionAttribute.cs" />
     <Compile Include="Attributes\RavenSessionAttribute.cs" />
     <Compile Include="Dependency\ApiDependencyResolver.cs" />
     <Compile Include="Dependency\MvcDependencyResolver.cs" />

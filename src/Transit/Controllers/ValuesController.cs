@@ -11,10 +11,12 @@ namespace Transit.Controllers
 {
     public class ValuesController : ApiController
     {
+        private IDocumentSession _documentSession;
         private IAsyncDocumentSession _asyncDocumentSession;
 
-        public ValuesController(IAsyncDocumentSession asyncDocumentSession)
+        public ValuesController(IDocumentSession documentSession, IAsyncDocumentSession asyncDocumentSession)
         {
+            _documentSession = documentSession;
             _asyncDocumentSession = asyncDocumentSession;
         }
 
