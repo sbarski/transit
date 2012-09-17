@@ -48,7 +48,6 @@ namespace Transit.Web.Dependency
 
             FilterProviders.Providers.Add(new SimpleInjectorFilterAttributeFilterProvider(container));
 
-
             //apparently -> http://www.strathweb.com/2012/06/control-the-execution-order-of-your-filters-in-asp-net-web-api/
             configuration.Services.Add(typeof(System.Web.Http.Filters.IFilterProvider), new SimpleInjectorHttpFilterAttributeFilterProvider(container));
 

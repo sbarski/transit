@@ -14,6 +14,8 @@ namespace Transit
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            config.Formatters.XmlFormatter.SupportedMediaTypes.Clear(); //remove xml to serve json by default
         }
     }
 }

@@ -11,20 +11,19 @@ namespace Transit.Controllers
 {
     public class ValuesController : ApiController
     {
-        private IDocumentSession _documentSession;
         private IAsyncDocumentSession _asyncDocumentSession;
 
-        public ValuesController(IDocumentSession documentSession, IAsyncDocumentSession asyncDocumentSession)
+        public ValuesController(IAsyncDocumentSession asyncDocumentSession)
         {
-            _documentSession = documentSession;
             _asyncDocumentSession = asyncDocumentSession;
         }
 
 
         // GET api/values
+            [AllowAnonymous]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new string[] { "value1", "value2", "value3" };
         }
 
         // GET api/values/5
