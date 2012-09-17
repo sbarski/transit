@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Transit.Domain.Core
 {
-    internal class User
+    public class User
     {
+        public string Username { get; set; }
+        public string PasswordHash { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
     }
 }

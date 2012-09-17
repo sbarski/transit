@@ -23,6 +23,8 @@ namespace Transit
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             InjectorConfig.Register();
+            SecurityConfig.RegisterHandlers(GlobalConfiguration.Configuration);
+
         }
     }
 }
