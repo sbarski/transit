@@ -12,8 +12,7 @@ namespace Transit
         public static void RegisterHandlers(HttpConfiguration configuration)
         {
             configuration.MessageHandlers
-              .Add(new BasicAuthMessageHandler(){
-               });
+              .Add(new HttpsMessageHandler());
         }
     }
 }

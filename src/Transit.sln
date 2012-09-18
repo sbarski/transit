@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transit.Data", "Transit.Dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transit.Web", "Transit.Web\Transit.Web.csproj", "{26E989AC-2955-42F4-B292-2C501952A595}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transit.Infrastructure", "Transit.Infrastructure\Transit.Infrastructure.csproj", "{4CF0CED1-3DE6-49E3-9F24-3E81933A8E24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transit.Service", "Transit.Service\Transit.Service.csproj", "{ECA0DEC5-4E34-4AFB-8517-4CAC49EAD47C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +41,14 @@ Global
 		{26E989AC-2955-42F4-B292-2C501952A595}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26E989AC-2955-42F4-B292-2C501952A595}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26E989AC-2955-42F4-B292-2C501952A595}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CF0CED1-3DE6-49E3-9F24-3E81933A8E24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CF0CED1-3DE6-49E3-9F24-3E81933A8E24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CF0CED1-3DE6-49E3-9F24-3E81933A8E24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CF0CED1-3DE6-49E3-9F24-3E81933A8E24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECA0DEC5-4E34-4AFB-8517-4CAC49EAD47C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECA0DEC5-4E34-4AFB-8517-4CAC49EAD47C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECA0DEC5-4E34-4AFB-8517-4CAC49EAD47C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECA0DEC5-4E34-4AFB-8517-4CAC49EAD47C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

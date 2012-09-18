@@ -39,8 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\Role.cs" />
-    <Compile Include="Core\User.cs" />
+    <Compile Include="Core\AuditedEntity.cs" />
+    <Compile Include="User\Role.cs" />
+    <Compile Include="User\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

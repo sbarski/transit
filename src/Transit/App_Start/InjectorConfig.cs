@@ -11,6 +11,8 @@ using System.Web.Mvc;
 using System.Web.Http;
 using Transit.Web.Attributes;
 using Transit.Web.Dependency;
+using Transit.Service.Account;
+using SimpleInjector.Extensions;
 
 namespace Transit
 {
@@ -21,6 +23,8 @@ namespace Transit
             var container = new Container();
 
             RegisterRavenDB(container);
+
+            RegisterTransitServices(container);
 
             container.Verify();
 
@@ -40,6 +44,25 @@ namespace Transit
             container.RegisterPerWebRequest<IAsyncDocumentSession>(() => store.OpenAsyncSession());
 
             container.RegisterPerWebRequest<IDocumentSession>(() => store.OpenSession());
+        }
+
+        private static void RegisterTransitServices(Container container)
+        {
+            var serviceAssembly = typeof(IAccountService).Assembly;
+
+            var registrations = 
+                from type in serviceAssembly.GetExportedTypes()
+                where type.GetInterfaces().Length > 0
+                select new
+                {
+                    Service = type.GetInterfaces().First(),
+                    Implementation = type
+                };
+
+            foreach(var registration in registrations)
+            {
+                NonGenericRegistrationsExtensions.Register(container, registration.Service, registration.Implementation);
+            }
         }
     }
 }

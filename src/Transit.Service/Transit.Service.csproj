@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{26E989AC-2955-42F4-B292-2C501952A595}</ProjectGuid>
+    <ProjectGuid>{ECA0DEC5-4E34-4AFB-8517-4CAC49EAD47C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Transit.Web</RootNamespace>
-    <AssemblyName>Transit.Web</AssemblyName>
+    <RootNamespace>Transit.Service</RootNamespace>
+    <AssemblyName>Transit.Service</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,9 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Practices.ServiceLocation">
-      <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.4.5.7\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -45,20 +42,9 @@
     <Reference Include="Raven.Client.Lightweight">
       <HintPath>..\packages\RavenDB.Client.1.0.972\lib\net40\Raven.Client.Lightweight.dll</HintPath>
     </Reference>
-    <Reference Include="SimpleInjector">
-      <HintPath>..\packages\SimpleInjector.1.5.0.12199\lib\net35\SimpleInjector.dll</HintPath>
-    </Reference>
-    <Reference Include="SimpleInjector.Integration.Web">
-      <HintPath>..\packages\SimpleInjector.Integration.Web.1.5.0.12199\lib\net40\SimpleInjector.Integration.Web.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
-    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
-    <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -66,21 +52,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Attributes\BasicAuthenticationAttribute.cs" />
-    <Compile Include="Attributes\RavenSessionAttribute.cs" />
-    <Compile Include="Dependency\ApiDependencyResolver.cs" />
-    <Compile Include="Dependency\MvcDependencyResolver.cs" />
-    <Compile Include="Dependency\SimpleInjectorDependencyResolver.cs" />
-    <Compile Include="Model\LogOn.cs" />
-    <Compile Include="Model\SignIn.cs" />
-    <Compile Include="Model\SignUp.cs" />
+    <Compile Include="Account\AccountService.cs" />
+    <Compile Include="Account\IAccountService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Security\ApiIdentity.cs" />
-    <Compile Include="Security\HttpsMessageHandler.cs" />
-    <Compile Include="Account\UserManagement.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Transit.Domain\Transit.Domain.csproj">
@@ -91,6 +65,13 @@
       <Project>{4cf0ced1-3de6-49e3-9f24-3e81933a8e24}</Project>
       <Name>Transit.Infrastructure</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Transit.Web\Transit.Web.csproj">
+      <Project>{26e989ac-2955-42f4-b292-2c501952a595}</Project>
+      <Name>Transit.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

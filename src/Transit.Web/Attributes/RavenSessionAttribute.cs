@@ -10,12 +10,11 @@ using System.Web.Mvc;
 
 namespace Transit.Web.Attributes
 {
-    [AttributeUsage(AttributeTargets.Class, Inherited=true)]
-    public class RavenSesionAttribute : FilterAttribute, IActionFilter
+    public class RavenSessionAttribute : FilterAttribute, IActionFilter
     {
         private Container _container;
 
-        public RavenSesionAttribute(Container container)
+        public RavenSessionAttribute(Container container)
         {
             _container = container;
         }

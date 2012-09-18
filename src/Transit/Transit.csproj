@@ -56,6 +56,9 @@
     <Reference Include="SimpleInjector">
       <HintPath>..\packages\SimpleInjector.1.5.0.12199\lib\net35\SimpleInjector.dll</HintPath>
     </Reference>
+    <Reference Include="SimpleInjector.Extensions">
+      <HintPath>..\packages\SimpleInjector.Extensions.1.5.0.12238\lib\net35\SimpleInjector.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="SimpleInjector.Integration.Web">
       <HintPath>..\packages\SimpleInjector.Integration.Web.1.5.0.12199\lib\net40\SimpleInjector.Integration.Web.dll</HintPath>
     </Reference>
@@ -136,8 +139,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\SecurityConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -258,6 +261,10 @@
     <ProjectReference Include="..\Transit.Data\Transit.Data.csproj">
       <Project>{d7105256-931f-4a45-99cd-de8b95ee922d}</Project>
       <Name>Transit.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Transit.Service\Transit.Service.csproj">
+      <Project>{eca0dec5-4e34-4afb-8517-4cac49ead47c}</Project>
+      <Name>Transit.Service</Name>
     </ProjectReference>
     <ProjectReference Include="..\Transit.Web\Transit.Web.csproj">
       <Project>{26e989ac-2955-42f4-b292-2c501952a595}</Project>
