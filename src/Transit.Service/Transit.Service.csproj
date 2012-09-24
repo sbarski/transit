@@ -54,6 +54,8 @@
   <ItemGroup>
     <Compile Include="Account\AccountService.cs" />
     <Compile Include="Account\IAccountService.cs" />
+    <Compile Include="Intranet\IIntranetService.cs" />
+    <Compile Include="Intranet\IntranetService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

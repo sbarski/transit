@@ -141,6 +141,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IntranetController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -261,6 +262,10 @@
     <ProjectReference Include="..\Transit.Data\Transit.Data.csproj">
       <Project>{d7105256-931f-4a45-99cd-de8b95ee922d}</Project>
       <Name>Transit.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Transit.Domain\Transit.Domain.csproj">
+      <Project>{86062cb5-0590-44ea-9580-80fb69b0a1fb}</Project>
+      <Name>Transit.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\Transit.Service\Transit.Service.csproj">
       <Project>{eca0dec5-4e34-4afb-8517-4cac49ead47c}</Project>
