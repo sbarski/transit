@@ -33,8 +33,7 @@ namespace Transit.Web.Attributes
                 using (var db = DocumentStore.OpenSession())
                 {
                     var user = db.Query<User>()
-                        .Where(m => HashHelper.CompareHash(m.Token, decodedTokenHash, HashHelper.HashType.SHA512))
-                        .SingleOrDefault();
+                        .SingleOrDefault(m => m.Token == decodedTokenHash);
 
                     if (user != null)
                     {
