@@ -19,17 +19,17 @@ namespace Transit.Tests.Controllers
 
         public ValuesControllerTest()
         {
-            _container = new Container();
+            //_container = new Container();
 
-            var documentStore = new Raven.Client.Embedded.EmbeddableDocumentStore { RunInMemory = true, UseEmbeddedHttpServer = true };
+            //var documentStore = new Raven.Client.Embedded.EmbeddableDocumentStore { RunInMemory = true, UseEmbeddedHttpServer = true };
 
-            //documentStore.Initialize();
+            ////documentStore.Initialize();
 
-            _container.RegisterSingle<IDocumentStore>(documentStore);
+            //_container.RegisterSingle<IDocumentStore>(documentStore);
 
-            _container.RegisterSingle<IAsyncDocumentSession>(() => documentStore.OpenAsyncSession());
+            //_container.RegisterSingle<IAsyncDocumentSession>(() => documentStore.OpenAsyncSession());
 
-            _container.RegisterSingle<IDocumentSession>(() => documentStore.OpenSession());
+            //_container.RegisterSingle<IDocumentSession>(() => documentStore.OpenSession());
         }
 
         [TestInitialize]
@@ -40,29 +40,29 @@ namespace Transit.Tests.Controllers
             documentStore.Initialize(); //Re-initialize the document store
         }
 
-        [TestMethod]
-        public void Blah()
-        {
-        }
+        //[TestMethod]
+        //public void Blah()
+        //{
+        //}
 
-        [TestMethod]
-        public void Get()
-        {
-            var documentSession = _container.GetInstance<IDocumentSession>();
-            //var asyncDocumentSession = _container.GetInstance<IAsyncDocumentSession>();
+        //[TestMethod]
+        //public void Get()
+        //{
+        //    var documentSession = _container.GetInstance<IDocumentSession>();
+        //    //var asyncDocumentSession = _container.GetInstance<IAsyncDocumentSession>();
 
-            //// Arrange
-            //ValuesController controller = new ValuesController(documentSession, null);
+        //    //// Arrange
+        //    //ValuesController controller = new ValuesController(documentSession, null);
 
-            //// Act
-            //IEnumerable<string> result = controller.Get();
+        //    //// Act
+        //    //IEnumerable<string> result = controller.Get();
 
-            //// Assert
-            //Assert.IsNotNull(result);
-            //Assert.AreEqual(2, result.Count());
-            //Assert.AreEqual("value1", result.ElementAt(0));
-            //Assert.AreEqual("value2", result.ElementAt(1));
-        }
+        //    //// Assert
+        //    //Assert.IsNotNull(result);
+        //    //Assert.AreEqual(2, result.Count());
+        //    //Assert.AreEqual("value1", result.ElementAt(0));
+        //    //Assert.AreEqual("value2", result.ElementAt(1));
+        //}
 
         //[TestMethod]
         //public void GetById()
