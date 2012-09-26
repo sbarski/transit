@@ -10,7 +10,6 @@ using Transit.Web.Attributes;
 
 namespace Transit.Controllers
 {
-    [BasicAuthentication]
     public class IntranetController : ApiController
     {
         private readonly IIntranetService _intranetService;
@@ -19,11 +18,14 @@ namespace Transit.Controllers
             _intranetService = intranetService;
         }
 
+        [BasicAuthentication]
         public IEnumerable<Staff> Staff()
         {
             return _intranetService.GetStaffList();
         }
 
+
+        [BasicAuthentication]
         public void SetStaffLocation(IList<Staff> staff)
         {
             _intranetService.SetStaffLocation(staff);
