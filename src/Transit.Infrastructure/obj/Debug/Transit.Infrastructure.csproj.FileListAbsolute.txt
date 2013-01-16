@@ -1,4 +1,0 @@
-C:\Users\Administrator\Documents\GitHub\transit\src\Transit.Infrastructure\bin\Debug\Transit.Infrastructure.dll
-C:\Users\Administrator\Documents\GitHub\transit\src\Transit.Infrastructure\bin\Debug\Transit.Infrastructure.pdb
-C:\Users\Administrator\Documents\GitHub\transit\src\Transit.Infrastructure\obj\Debug\Transit.Infrastructure.dll
-C:\Users\Administrator\Documents\GitHub\transit\src\Transit.Infrastructure\obj\Debug\Transit.Infrastructure.pdb

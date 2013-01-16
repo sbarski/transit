@@ -13,13 +13,13 @@ namespace Transit.Web.Security
     {
         protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
-            //if (!String.Equals(request.RequestUri.Scheme, "https", StringComparison.OrdinalIgnoreCase))
-            //{
-            //    return Task.Factory.StartNew(() =>
-            //        {
-            //            return new HttpResponseMessage(HttpStatusCode.BadRequest) { Content = new StringContent("Transit Requires HTTPS") };
-            //        });
-            //}
+            if (!String.Equals(request.RequestUri.Scheme, "https", StringComparison.OrdinalIgnoreCase))
+            {
+                return Task.Factory.StartNew(() =>
+                    {
+                        return new HttpResponseMessage(HttpStatusCode.BadRequest) { Content = new StringContent("Transit Requires HTTPS") };
+                    });
+            }
 
             return base.SendAsync(request, cancellationToken);
         }

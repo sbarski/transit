@@ -3,7 +3,3 @@ c:\Users\administrator\documents\visual studio 2012\Projects\Transit\Transit.Dom
 c:\Users\administrator\documents\visual studio 2012\Projects\Transit\Transit.Domain\obj\Debug\Transit.Domain.csprojResolveAssemblyReference.cache
 c:\Users\administrator\documents\visual studio 2012\Projects\Transit\Transit.Domain\obj\Debug\Transit.Domain.dll
 c:\Users\administrator\documents\visual studio 2012\Projects\Transit\Transit.Domain\obj\Debug\Transit.Domain.pdb
-C:\Users\Administrator\Documents\GitHub\transit\src\Transit.Domain\bin\Debug\Transit.Domain.dll
-C:\Users\Administrator\Documents\GitHub\transit\src\Transit.Domain\bin\Debug\Transit.Domain.pdb
-C:\Users\Administrator\Documents\GitHub\transit\src\Transit.Domain\obj\Debug\Transit.Domain.dll
-C:\Users\Administrator\Documents\GitHub\transit\src\Transit.Domain\obj\Debug\Transit.Domain.pdb

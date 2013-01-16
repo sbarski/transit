@@ -13,17 +13,3 @@ c:\Users\administrator\documents\visual studio 2012\Projects\Transit\Transit.Dat
 c:\Users\administrator\documents\visual studio 2012\Projects\Transit\Transit.Data\obj\Debug\Transit.Data.csprojResolveAssemblyReference.cache
 c:\Users\administrator\documents\visual studio 2012\Projects\Transit\Transit.Data\obj\Debug\Transit.Data.dll
 c:\Users\administrator\documents\visual studio 2012\Projects\Transit\Transit.Data\obj\Debug\Transit.Data.pdb
-C:\Users\Administrator\Documents\GitHub\transit\src\Transit.Data\bin\Debug\Transit.Data.dll
-C:\Users\Administrator\Documents\GitHub\transit\src\Transit.Data\bin\Debug\Transit.Data.pdb
-C:\Users\Administrator\Documents\GitHub\transit\src\Transit.Data\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Administrator\Documents\GitHub\transit\src\Transit.Data\bin\Debug\NLog.dll
-C:\Users\Administrator\Documents\GitHub\transit\src\Transit.Data\bin\Debug\Raven.Abstractions.dll
-C:\Users\Administrator\Documents\GitHub\transit\src\Transit.Data\bin\Debug\Raven.Client.Lightweight.dll
-C:\Users\Administrator\Documents\GitHub\transit\src\Transit.Data\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Administrator\Documents\GitHub\transit\src\Transit.Data\bin\Debug\NLog.xml
-C:\Users\Administrator\Documents\GitHub\transit\src\Transit.Data\bin\Debug\Raven.Abstractions.pdb
-C:\Users\Administrator\Documents\GitHub\transit\src\Transit.Data\bin\Debug\Raven.Abstractions.xml
-C:\Users\Administrator\Documents\GitHub\transit\src\Transit.Data\bin\Debug\Raven.Client.Lightweight.pdb
-C:\Users\Administrator\Documents\GitHub\transit\src\Transit.Data\bin\Debug\Raven.Client.Lightweight.xml
-C:\Users\Administrator\Documents\GitHub\transit\src\Transit.Data\obj\Debug\Transit.Data.dll
-C:\Users\Administrator\Documents\GitHub\transit\src\Transit.Data\obj\Debug\Transit.Data.pdb
